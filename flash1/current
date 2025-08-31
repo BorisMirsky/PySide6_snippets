@@ -1,0 +1,242 @@
+_Bardak_666_   gitHub
+mirskiy.boris   654321Qw (local PC)
+999BardaK666   - это что вообще такое
+GitLab:
+     new password    -   StrelaPassword666
+     user (email)    -   mirskiy.boris@vniizht.ru
+     Bardak666     GitLab   -    НЕТ! СТАРЫЙ ПАРОЛЬ
+
+#########################
+###################################3
+https://sdo.rzd.ru
+
+no!
+BorMirsk                 login
+Bardak666!@#$%^
+
+
+
+BorisMirskiy
+mirskiy.boris@vniizht.ru
+Bardak1!2@3#_.?
+
+borismirskiy
+_Bardak1!2@3#.?
+boris.y.mirsky@gmail.com
+
+
+FatGuy666
+BardaK6?
+borisgarpenlov@gmail.com
+#################################################
+
+
+Scalene
+
+
+#####################################################################
+
+Qt Forum
+boris.y.mirsky@gmail.com
+Bardak666
+
+
+#################################################################################################################
+Как утягивать с гитлаба всю Стрелу:
+С основного
+git clone --recurse-submodules -b dev/boris-mirskiy/main git@gitlab.vniizht.lan:strela-ds/arrow_machine_manager/arrow_onboard_system.git
+
+Володин
+git clone --recurse-submodules -b dev/vpolyanskiy/main git@gitlab.vniizht.lan:strela-ds/arrow_machine_manager/arrow_onboard_system.git
+
+Мой
+git clone --recurse-submodules -b dev/boris-mirskiy/main git@gitlab.vniizht.lan:strela-ds/arrow_machine_manager/arrow_onboard_system.git
+
+Main
+git clone --recurse-submodules -b dev/main git@gitlab.vniizht.lan:strela-ds/arrow_machine_manager/arrow_onboard_system.git
+
+git pull --rebase --recurse-submodules origin dev/vpolyanskiy/main
+
+#################################################################################################################
+
+
+
+#################################################################################################################
+sudo pacman -Syu               Обновление системы базовое
+
+pip install virtualenv --break-system-packages      обходим кикоз
+###############################################################################
+-------------create virtualenv--------------------
+cd /home/boris/Source/Strela   (any need folder)
+virtualenv strela_virtualenv
+
+virtualenv --python="/usr/local/bin/python3.10" StrelaVenv
+################################################################################
+_____________activate virtualenv___________________
+cd /home/boris/Source/Strela
+source StrelaVenv/bin/activate
+
+cd ~
+pycharm-community-2023.2.2/bin/pycharm.sh
+
+
+Выбор интерпретатора: existing ... my_venv ... /bin/python3.10
+
+#################### ET 7026 #######################
+ssh enp2s0@192.168.11.10=
+ET 7026
+http://192.168.11.19/
+Adres (ModBus) 1
+port 502=
+Admin/Admin
+Register
+
+
+
+##################################################################################
+ssh key
+Проверка работоспособности:
+ssh -T git@gitlab.com
+У меня ответ:
+ssh: connect to host gitlab.com port 22: Network is unreachable
+ Исправлено - там порт 224, в .ssh/ добавлен config, где прописано.
+
+#################################################################################################################
+
+#################################################################################################################
+             Пропал звук. Смотреть в трёх программах;
+alsamixer - всё выкручено на 'max', в том числе наушники (f6 default1:1 / headfones/ oo)
+   Включение устройства - клавиша 'm' (включил всё)
+Звуковые устройства\параметры системы - всё ок
+pavucontrol - типа оболочки над pulseaudio
+
+
+cat /proc/asound/cards
+aplay -l                      список звуковых карт
+lspci -nnk | grep -A2 Audio   как звуковая карта
+cat /proc/asound/card*/codec* | grep Codec        - какие кодеки
+pulseaudio - демон, доступ к нему через pavucontrol
+
+короче, дело оказалось не в manjare, а в мозилле. Стоял неверный выход сигнала,
+перешёл на браузер Вивальди (хз что это такое).
+
+Еще странность - полностью слетело всё виртуальное окружение, вернее его наполнение.
+
+#################################################################################################################
+
+
+git fetch
+git pull - получаем изменения с удалённого репозитория в локальный, без ключей!
+
+
+#####################################################################
+
+
+
+1) Чтобы сделать один индикатор над другим, чекни Qt.WidgetAttribute.WA_TranslucentBackground для прозрачности фона
+2) QStackedLayout со QStackedLayout.StackingMode.StackAll
+3) не круг а вытянутые линии
+4) Ужать виджеты в правом виджете не получается, оч большой расброс
+5)
+
+
+
+
+калибровка (FooterControlPanel.F4 -> SetValuePathAdjustment)
+/home/boris/Рабочий стол/arrow_onboard_system/arrow_onboard_system/main.py + FooterControlPanel.py
+КАК ДЕЛАТЬ
+       1  "Вешай QShortcut на самое большое окно (на котором уже висит сам scroll area)"
+
+           LiningProcessWindow  +  QShortcut:
+              окно открывается сразу по открытию окна и только 1 раз
+
+       2  keyPressEvent
+       надо вешать focusChanged на QApplication, но не понимаю как
+
+        + сюда же надо ESCAPE + F8
+
+
+
+
+
+
+
+#######################################   Ярлык для запуска программы   #########################################################
+Может быть, добавить исполняемый файл программы в переменную среды PATH ?
+
+тестовый простой файл.py
+/home/boris/Source/Strela/StrelaRepo-main/RunFromShell.py                     запускается
+
+конкретный интерпретатор
+python /home/boris/Source/Strela/strela_virtualenv/bin/python3.10             ругается
+
+рабочий файл программы
+python /home/boris/Source/Strela/arrow_onboard_system/release_run.py          ругается (не видит ./resources/config.json)
+
+Установка ярлыка в свой каталог (Или вручную туда перетащить)
+desktop-file-install --dir=$HOME/.local/share/applications ~/Рабочий стол/strela_shortcut.desktop
+################################################################################################
+
+
+
+##########################################################################################################################
+Смена размера шрифта.
+
+При добавлении apply_stylesheet размер шрифта не меняется.
+
+Нашёл решение, скорее всего не лучшее, но как временное можно использовать.
+
+Надо залезать в "виртуальное_окружение/lib/python3.11/site-packages/qt_material/material.css.template"
+
+Там находишь строки
+{% else %}
+    font-size: {{13|density(density_scale, density_interval=1)}}px;
+и вручную меняешь дефолтные '13'.
+
+Не перепутать 'font-size' и 'font_size'.
+
+Судя по коду в этом в 'material.css.template' смена шрифта типа "'font_size': '25px'" должна работать, но нет.
+##########################################################################################################################
+
+
+
+
+
+################################################# Ярлыки #########################################################################
+Для запуска главного приложения ярлыком пришлось поменять относительные пути на абсолютные:
+
+1) main.py
+config = json.load(open('/home/boris/Source/Strela/arrow_onboard_system/resources/config.json'))
+
+2) arrow_onboard_system/operating/states/program_task_calculation/ProgramTaskCalculationState.py
+self.__config = json.load(open('/home/boris/Source/Strela/arrow_onboard_system/resources/config.json'))
+##########################################################################################################################
+
+
+
+
+
+
+
+
+
+#================================================================================================================
+
+Модель
+arrow_onboard_system/domain/models/StepIndexedDataFramePositionedModel.py
+
+Нужен класс обёртка наследуемый от AbstractPositionedTableModel (наша главная модель)
+Она будет разреживать по наим параметрам все метода кроме rowCount (!)
+
+В него обернём StepIndexedDataFramePositionedModel - её надо оборачивать
+(тут прокси это не QIdentityProxyModel !!)
+
+Нужна работа со временем а не только с позицией (как сейчас)
+Есть модели,идущие по позиции
+А есть модели, отражающие историю работы - тут модель с позицией не проканает.
+Поэтому нужны модели по времени - 2 типа графика одновременно
+Специфика нашем предметной области - 2 типа графиков
+
+
+
+

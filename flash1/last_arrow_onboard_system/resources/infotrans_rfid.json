@@ -1,0 +1,17 @@
+[
+    {
+        "step": 1,
+        "rfid_id": "00000000001",
+        "location": "Left"
+    },
+    {
+        "step": 2,
+        "rfid_id": "00000000002",
+        "location": "Middle"
+    },
+    {
+        "step": 3,
+        "rfid_id": "00000000003",
+        "location": "Right"
+    }
+]

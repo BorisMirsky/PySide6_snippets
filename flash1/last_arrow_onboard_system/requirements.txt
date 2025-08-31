@@ -1,0 +1,14 @@
+PySide6 == 6.7.2
+qt_material
+numpy
+pandas
+scipy
+asyncio
+aiohttp
+hyperopt
+pyarrow
+tqdm
+cantok
+sympy
+typing-extensions
+setuptools

@@ -1,0 +1,65 @@
+{
+    "segments": [
+        {
+            "v_pass": 120,
+            "v_gruz": 80,
+            "shifting_left": 50,
+            "shifting_right": -50,
+            "raising_ubound": 70,
+            "raising_lbound": 10
+        }
+    ],
+    "_curves": [
+        {
+            "start": 95,
+            "end": 410,
+            "transition_lengths": [
+                70,
+                115
+            ],
+            "radiuses": [
+                -375
+            ],
+            "params_k": [
+                5,
+                25
+            ],
+            "curve_urov": [
+                -15
+            ],
+            "straight_urov": 0,
+            "mx_evals": 100
+        }
+    ],
+    "optimization_parameters": {
+        "otvod_mm": 1,
+        "r_value": 10,
+        "n_split": 3,
+        "find_good_solution": true,
+        "max_number_of_radius": 5,
+        "min_quality": 20,
+        "max_seconds_for_iteration": 30,
+        "straight_urov": 0,
+        "straight_calc_type": [
+            2
+        ],
+        "curve_urov": [
+            15
+        ],
+        "_transition_curve": [
+            [
+                [
+                    18,
+                    18
+                ],
+                [
+                    22,
+                    22
+                ]
+            ]
+        ],
+        "save_alc": true,
+        "NR_value": -1,
+        "comment": "find_good_solution - РµСЃР»Рё true, С‚Рѕ РёС‰РµС‚ РѕРїС‚РёРјР°Р»СЊРЅРѕРµ СЂРµС€РµРЅРёРµ; max_number_of_radius - РјР°РєСЃРёРјР°Р»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЂР°РґРёСѓСЃРѕРІ РєСЂРёРІРѕР№, РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ РёСЃРєР°С‚СЊ РїСЂРѕРіСЂР°РјРјР°; min_quality - РєР°С‡РµСЃС‚РІРѕ Р°РїРїСЂРѕРєСЃРёРјР°С†РёРё; max_seconds_for_iteration - РІСЂРµРјСЏ РїРѕРёСЃРєР° РѕРґРЅРѕР№ РёС‚РµСЂР°С†РёРё РїСЂРё РїРѕРёСЃРєРµ РѕРїС‚РёРјР°Р»СЊРЅРѕРіРѕ СЂРµС€РµРЅРёСЏ"
+    }
+}

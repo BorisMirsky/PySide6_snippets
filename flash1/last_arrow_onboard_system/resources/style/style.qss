@@ -1,0 +1,334 @@
+QGroupBox {
+                border: 2px solid #999999;
+                border-radius: 5px;
+                margin-top: 1ex;
+                font-size: 14px;
+                color: black;
+            }
+QGroupBox::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                padding: 0 3px;
+                font-size: 20px;
+                font-weight: bold;
+                color: black;
+            }
+
+
+
+/*   ------------------------------- LiningView --------------------------------  */
+QLabel#sensorTitle {
+  color:black;
+  font:bold 15px;
+}
+QLabel#labelWorkStrelograph {
+  color:#88F34B;
+  font:bold 15px;
+}
+QLabel#labelProject {
+  color:red;
+  font:bold 15px;
+}
+QLabel#labelWorkLevel {
+  color:cyan;
+  font:bold 15px;
+}
+
+QLabel#saggingLeft {
+  color:#27B14A;
+  font:bold 15px;
+}
+QLabel#saggingRight {
+  color:white;
+  font:bold 15px;
+}
+QLabel#liftingLeft {
+  color:#F9D98A;
+  font:bold 15px;
+}
+
+QLabel#liftingRight {
+  color: darkblue;
+  font:bold 15px;
+}
+
+QLabel#sensorsValue {
+  background-color: black;
+  color: white;
+  padding: 2px;
+  font: bold 15px;
+  border: 2px solid black;
+  border-radius:9px;
+}
+
+QWidget[sensorWidgetBox="true"] {
+  background-color: #777777;
+  margin: 3px;
+  border-radius: 13px;
+}
+
+QWidget[topInfoPanel="true"] {
+  background-color: #DDDDDD;
+}
+
+
+QWidget[topInfoPanelControlUnitConnection="Ok"] {
+  background-color: #18f512;
+}
+QWidget[topInfoPanelControlUnitConnection="NotOk"] {
+  background-color: #f51806;
+}
+
+QLabel[labelInfo="true"] {
+  color: white;
+  padding: 10px;
+  font: bold 15px;
+  background-color: #777777;
+  margin: 3px;
+  border-radius: 13px;
+}
+QPushButton[centerButton="true"] {
+  background-color: white;
+  padding: 10px;
+  border : 2px solid black;
+  font: bold 15px;
+  border-radius: 13px;
+}
+QPushButton[centerButton="true"]:pressed {
+  background-color: #A9A9A9;
+  padding: 10px;
+  border : 2px solid black;
+  font: bold 15px;
+  border-radius: 13px;
+}
+QPushButton[centerButton="true"]:focus {
+  border: 3px solid #FF0000;
+  border-radius: 5px;
+  background-color: white
+}
+QGroupBox#wrapping_groupbox {
+                border: 2px solid #999999;
+                border-radius: 5px;
+                font-size: 16px;
+                color: black;
+            }
+QGroupBox#wrapping_groupbox::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top center;
+                padding: 0 3px;
+                font-size: 25px;
+                font-weight: bold;
+                color: black;
+            }
+
+QLabel#info_label {
+  border: 2px solid #999999;
+  border-radius: 5px;
+  padding:10px;
+  font-size: 15px;
+}
+QChartView[liningChartView='true'] {
+    border-style: outset;
+    border-width: 2px;
+    border-color: white;
+}
+QPushButton[liningOnAir='true'] {
+    border-style:outset;
+    border-width:7px;
+    border-color:red;
+    }
+QComboBox {
+    font-size: 15px;
+}
+QDoubleSpinBox {
+    font-size: 15px;
+}
+QFileDialog{
+    font-size: 15px;
+}
+
+
+/*  ---------------------   Options, MessagesBoxes, Dialogs  ------------------------------------ */
+QLabel[measuringInfoLabel="true"]{
+                                font: bold 16px;
+                                background-color: white;
+                                padding: 10px;
+                                }
+
+QLabel{font: 16px;}
+
+QLineEdit{border-radius: 3px;
+        padding: 5 8px;
+        selection-background-color: white;}
+
+QDialog{background-color:gray; font:16px;}
+
+QMessageBox{background-color: gray;font: 16px;}
+
+QDialogButtonBox QAbstractButton#ok {
+        background: green;
+}
+QDialogButtonBox QAbstractButton#cancel {
+        background: red;
+}
+QMessageBox.StandardButton.Yes{
+        background: green;
+}
+QMessageBox.StandardButton.Cancel{
+        background: red;
+}
+
+
+
+/*    ----------------------------------------- Measuring ---------------------------------------   */
+
+QTabWidget[MeasurementsTabWidget="true"]::tab {
+  height: 100px;
+}
+QTabBar::tab {
+ font: 14px;
+ height: 40px;
+ width: 150px;
+ border: 1px solid black;
+ padding: 5px;
+}
+QTabBar::tab:selected {
+        background-color: #D3B5AE;
+    }
+QTableView[measurementsTable="true"] {
+    font: 15px;
+    color: white;
+    background-color: #323232;
+    gridline-color: #ECDAD7;
+}
+QHeaderView { font: 13pt; }
+/* лэйблы в измерительной поездки над графиками */
+QLineEdit#measuring_sections_edit_lines {
+  background-color: #FFFFFF;
+  font: 13px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+
+
+
+
+
+/* -------------------------------- infoPanel ----------------------------- */
+QLabel[infoPanelLabel="true"] {
+  color: black;
+  font: 15px;
+}
+QLabel[infoPanelValueYellowBlack="true"] {
+  color: yellow;
+  font: bold 15px;
+  background-color: black;
+}
+QLabel[infoPanelValueBlueWhite="true"] {
+  color: blue;
+  font: 15px;
+  background-color: white;
+}
+
+
+
+QLabel[optionsWindowLabel="true"] {
+  font: 15px;
+}
+
+QLineEdit[optionsWindowLineEdit="true"] {
+  font: 12px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 5px;
+}
+QSpinBox[optionsWindowSpinBox="true"] {
+  font: 15px;
+}
+QWidget[optionsWindowWidget="true"] {
+  font: 15px;
+  background-color: #DDDDDD
+}
+QPushButton[optionsWindowPushButton="true"] {
+  background-color: white;
+  padding: 7px;
+  border : 1px solid black;
+  font: bold 15px;
+  border-radius: 7px;
+}
+QPushButton:hover[optionsWindowPushButton="true"]{
+    background-color: gray;
+    color: white;
+}
+
+
+QGroupBox[optionsWindowGroupBox="true"] {
+  font: 15px;
+}
+QDoubleSpinBox[optionsWindowDoubleSpinBox="true"] {
+  font: 15px;
+}
+QComboBox[optionsWindowComboBox="true"] {
+  font: 15px;
+}
+
+
+
+
+DoubleSideFillIndicator {
+    spacing: 0px;
+    margin: 0px;
+}
+DoubleSideFillIndicator QProgressBar {
+    border-radius: 0px;
+    text-align: center;
+    spacing: 0px;
+    margin: 0px
+}
+DoubleSideFillIndicator QProgressBar::chunk {
+    height: 1px;
+    width: 1px;
+}
+
+
+
+
+
+MarkerScrollIndicator::add-page, MarkerScrollIndicator::sub-page {
+    background: pink;
+    height: 5px;
+    width: 5px;
+}
+MarkerScrollIndicator:horizontal {
+  min-height: 40px;
+  max-height: 40px;
+}
+MarkerScrollIndicator:vertical {
+  min-width: 40px;
+  max-width: 40px;
+}
+MarkerScrollIndicator::handle:horizontal {
+    image: url(./resources/style/images/arrow_top_to_bottom.png);
+    height: 40px;
+    width: 40px;
+    border: 2px;
+    margin: 0px 0px;
+}
+MarkerScrollIndicator::handle:vertical {
+    image: url(./resources/style/images/arrow_right_to_left.jpeg.png);
+    height: 40px;
+    width: 40px;
+    border: 2px;
+    margin: 0px 0px;
+}
+MarkerScrollIndicator::groove:horizontal {
+  height: 34px;
+  background: #393939;
+  margin: 0px -20px;
+}
+MarkerScrollIndicator::groove:vertical {
+  width: 34px;
+  background: #393939;
+  margin: -20px 0px;
+}

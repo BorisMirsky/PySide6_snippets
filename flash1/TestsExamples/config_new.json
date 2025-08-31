@@ -1,0 +1,236 @@
+{
+    "moving_direction": "forward",
+    "machine_parameters": {
+        "base_rail": 0,
+        "measures_step": 0.185,
+        "back_horde_plan": 4.1,
+        "front_horde_plan": 17.4,
+        "back_horde_prof": 2.7,
+        "front_horde_prof": 14.3
+    },
+    "_restrictions": {
+        "plan_left_max": 100,
+        "plan_right_max": 100,
+        "plan_profile_max": 100,
+        "plan_profile_max": 100,
+        "speed_max": 60.0,
+        "ubound_plan": [],
+        "lbound_plan": [],
+        "ubound_prof": [],
+        "lbound_prof": [],
+        "v_max": []
+    },
+    "models": {
+        "connection": {
+            "_port": "/dev/ttyUSB0",
+            "port": "COM5",
+            "server_id": 1,
+            "baud_rate": 115200
+        },
+        "sensors": {
+            "position": {
+                "register_id": 2
+            },
+            "strelograph_work": {
+                "register_id": 8,
+                "projection_range": {
+                    "min": -8015,
+                    "max": 8300
+                },
+                "value_range": {
+                    "min": -300,
+                    "max": 300
+                }
+            },
+            "strelograph_control": {
+                "register_id": 8,
+                "projection_range": {
+                    "min": -8015,
+                    "max": 8300
+                },
+                "value_range": {
+                    "min": -300,
+                    "max": 300
+                }
+            },
+            "pendulum_work": {
+                "register_id": 32,
+                "projection_range": {
+                    "min": -4699,
+                    "max": 4865
+                },
+                "value_range": {
+                    "min": -150,
+                    "max": 150
+                }
+            },
+            "pendulum_control": {
+                "register_id": 12,
+                "projection_range": {
+                    "min": -5408,
+                    "max": 5299
+                },
+                "value_range": {
+                    "min": -150,
+                    "max": 150
+                }
+            },
+            "pendulum_front": {
+                "register_id": 32,
+                "projection_range": {
+                    "min": -4699,
+                    "max": 4865
+                },
+                "value_range": {
+                    "min": -150,
+                    "max": 150
+                }
+            },
+            "sagging_left": {
+                "register_id": 16,
+                "projection_range": {
+                    "min": -6421,
+                    "max": -85
+                },
+                "value_range": {
+                    "min": 0,
+                    "max": 100
+                }
+            },
+            "sagging_right": {
+                "register_id": 18,
+                "projection_range": {
+                    "min": -6762,
+                    "max": 806
+                },
+                "value_range": {
+                    "min": 0,
+                    "max": 100
+                }
+            },
+            "uplifting_left": {
+                "register_id": 22,
+                "projection_range": {
+                    "min": 0,
+                    "max": 65535
+                },
+                "value_range": {
+                    "min": 0,
+                    "max": 65535
+                }
+            },
+            "uplifting_right": {
+                "register_id": 24,
+                "projection_range": {
+                    "min": 0,
+                    "max": 65535
+                },
+                "value_range": {
+                    "min": 0,
+                    "max": 65535
+                }
+            }
+        },
+        "controls": {
+            "lining": {
+                "register_id": 11,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "lifting_left": {
+                "register_id": 13,
+                "projection_range": {
+                    "min": 205,
+                    "max": 819
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "lifting_right": {
+                "register_id": 15,
+                "projection_range": {
+                    "min": 205,
+                    "max": 819
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "lifting_both": {
+                "register_id": 30,
+                "projection_range": {
+                    "min": 205,
+                    "max": 819
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "indicator_lining": {
+                "register_id": 17,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": -15
+                }
+            },
+            "indicator_pendulum_work": {
+                "register_id": 19,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "indicator_pendulum_control": {
+                "register_id": 21,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "indicator_lifting_left": {
+                "register_id": 23,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            },
+            "indicator_lifting_right": {
+                "register_id": 25,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -15,
+                    "max": 15
+                }
+            }
+        }
+    }
+}

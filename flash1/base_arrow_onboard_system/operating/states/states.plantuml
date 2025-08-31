@@ -1,0 +1,64 @@
+@startuml
+scale 350 width
+[*] --> ApplicationStateMachine
+
+state ApplicationStateMachine {
+  [*] --> ApplicationIdleState
+
+  state ApplicationIdleState {
+
+  }
+  ApplicationIdleState --> ApplicationQuitState
+  ApplicationIdleState --> ApplicationMeasuringState
+  ApplicationIdleState --> ProgramTaskCalculationState
+  ApplicationIdleState --> ApplicationLiningState
+
+  state ApplicationMeasuringState {
+    [*] --> MeasuringOptionsState
+    MeasuringOptionsState --> MeasuringProcessState
+    MeasuringProcessState --> MeasuringSuccessState
+    MeasuringProcessState --> MeasuringErrorState
+    MeasuringSuccessState --> MeasuringFinalState
+    MeasuringErrorState --> MeasuringFinalState
+  }
+  state ProgramTaskCalculationState {
+    [*] --> ProgramTaskCalculationOptionsState
+    ProgramTaskCalculationOptionsState --> ProgramTaskCalculationProcessState
+    ProgramTaskCalculationProcessState --> ProgramTaskCalculationSuccessState
+    ProgramTaskCalculationProcessState --> ProgramTaskCalculationErrorState
+    ProgramTaskCalculationSuccessState --> ProgramTaskCalculationFinalState
+    ProgramTaskCalculationErrorState --> ProgramTaskCalculationFinalState
+  }
+  state ApplicationLiningState {
+    [*] --> SelectLiningTripModeState
+    SelectLiningTripModeState --> NewLiningOptionsState
+    SelectLiningTripModeState --> ContinueLiningOptionsState
+    SelectLiningTripModeState --> EmergencyExtractionRecoveryOptionsState
+    NewLiningOptionsState --> LiningProcessState
+    ContinueLiningOptionsState --> LiningProcessState
+    EmergencyExtractionRecoveryOptionsState --> LiningProcessState
+    LiningProcessState --> EmergencyExtractionProcessState
+    LiningProcessState --> LiningSuccessState
+    LiningProcessState --> LiningErrorState
+    
+    LiningSuccessState --> LiningFinalState
+    LiningErrorState --> LiningFinalState
+
+    EmergencyExtractionProcessState --> EmergencyExtractionSuccessState
+    EmergencyExtractionProcessState --> EmergencyExtractionErrorState
+    EmergencyExtractionSuccessState --> LiningFinalState
+    EmergencyExtractionErrorState --> LiningFinalState
+  }
+  
+  
+  /' 
+  MeasuringFinalState --> ApplicationIdleState
+  ProgramTaskCalculationFinalState --> ApplicationIdleState
+  LiningFinalState --> ApplicationIdleState 
+  '/
+}
+@enduml
+
+
+
+

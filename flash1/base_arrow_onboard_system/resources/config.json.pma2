@@ -1,0 +1,241 @@
+{
+    "machine_parameters": {
+        "description": "ПМА-1 №2",
+        "measures_step": 0.185,
+        "front_horde_plan": 10.200,
+        "back_horde_plan": 7.700,
+        "front_horde_prof": 10.100,
+        "back_horde_prof": 6.610,
+        "ticks_number": 230272,
+        "ticks_distance": 100,
+        "lining_system_movable": false,
+        "levelling_system_movable": true
+    },        
+    "rfid_scanner": {
+        "check_timeout_ms": 50,
+        "expire_timeout_ms": 1000,
+        "scanners": [
+            {
+                "model": "UhfSlr1104RfidScanner",
+                "host": "",
+                "antennas": 10001
+            }
+        ]
+    },
+    "models": {
+        "connection": {
+            "port": "/dev/ttyUSB0",
+            "_port": "COM11",
+            "server_id": 1,
+            "baud_rate": 115200,
+            "poll_timer": 15,
+            "lining_timer": 10,
+            "receive_items_count": 18,
+            "send_items_count": 12
+        },
+        "sensors": {
+            "tick_counter": {
+                "register_id": 1,
+                "inverse": false
+            },            
+            "strelograph_work": {
+                "register_id": 2,
+                "projection_range": {
+                    "min": 453,
+                    "max": 3287
+                },
+                "value_range": {
+                    "min": -332,
+                    "max": 304
+                }
+            },            
+            "pendulum_work": {
+                "register_id": 4,
+                "inverse": false,
+                "projection_range": {
+                    "min": 1032, 
+                    "max": 2873
+                },
+                "value_range": {
+                    "min": -185,
+                    "max": 198
+                }
+            },
+            "pendulum_control": {
+                "register_id": 5,
+                "inverse": false,
+                "projection_range": {
+                    "min": 1052, 
+                    "max": 2990
+                },
+                "value_range": {
+                    "min": 187,
+                    "max": -214
+                }
+            },
+            "pendulum_front": {
+                "register_id": 6,
+                "inverse": true,
+                "projection_range": {
+                    "min": 1166, 
+                    "max": 3103
+                },
+                "value_range": {
+                    "min": -190,
+                    "max": 209
+                }
+            },                       
+            "sagging_left": {
+                "register_id": 7,
+                "projection_range": {
+                    "min": 78, 
+                    "max": 3546
+                },
+                "value_range": {
+                    "min": 100,
+                    "max": -100
+                }
+            },
+            "sagging_right": {
+                "register_id": 8,
+                "projection_range": {
+                    "min": 142,
+                    "max": 3663
+                },
+                "value_range": {
+                    "min": -100,
+                    "max": 101
+                }
+            },
+            "satellite": {
+                "disabled": false,
+                "register_id": 3,                
+                "projection_range": {
+                    "min": 884,
+                    "max": 3623
+                },
+                "value_range": {
+                    "min": -0.951,
+                    "max": 0
+                }
+            }, 
+            "discrete_signals": {
+                "register_id": 12
+            }
+        },
+        "controls": {
+            "lining": {
+                "register_id": 2,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": -150,
+                    "max": 150,
+                    "zero": 0,
+                    "start_value": 10                    
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+            "lifting_left": {
+                "register_id": 3,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": -150,
+                    "max": 150,
+                    "zero": 0,
+                    "start_value": 10
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+            "lifting_right": {
+                "register_id": 4,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": -150,
+                    "max": 150,
+                    "zero": 0,
+                    "start_value": 10
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+
+            "indicator_lining": {
+                "register_id": 5,
+                "projection_range": {
+                    "min": 2750,
+                    "max": 1350
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            },
+            "indicator_pendulum_work": {
+                "register_id": 6,
+                "projection_range": {
+                    "min": 4000,
+                    "max": 96
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            },
+            "indicator_pendulum_control": {
+                "register_id": 7,
+                "projection_range": {
+                    "min": 3850,
+                    "max": 250
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            },
+            "indicator_pendulum_front": {
+                "register_id": 8,
+                "projection_range": {
+                    "min": 3850,
+                    "max": 250
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            },
+            "indicator_lifting_left": {
+                "register_id": 9,
+                "projection_range": {
+                    "min": 500,
+                    "max": 3600
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            },
+            "indicator_lifting_right": {
+                "register_id": 10,
+                "projection_range": {
+                    "min": 500,
+                    "max": 3600
+                },
+                "value_range": {
+                    "min": -7,
+                    "max": 7
+                }
+            }
+        }
+    }
+}

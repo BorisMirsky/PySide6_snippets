@@ -1,0 +1,7 @@
+{
+  "machine_name": null,
+  "controller": {
+    "port": "/dev/ttuUSB0",
+    "baud_rate": 9600
+  }
+}

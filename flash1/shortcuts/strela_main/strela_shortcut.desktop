@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Strela
+Comment=Start Strela Application
+Exec=zsh /home/boris/'Рабочий стол'/shell_file/script.sh
+Icon=/home/boris/Рабочий стол/shell_file/icon_arrow_main_256.png
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=true
+TerminalOptions=\s--noclose
+Type=Application
+

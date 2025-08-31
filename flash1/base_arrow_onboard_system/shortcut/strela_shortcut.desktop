@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Стрела ДС
+Comment=Start Strela Application
+Exec=/home/arrow/vniizht/arrow_onboard_system/shortcut/run_strela.sh
+Icon=/home/arrow/vniizht/arrow_onboard_system/resources/images/icon_arrow_main_256.png
+NoDisplay=false
+Path=/home/arrow/vniizht/arrow_onboard_system
+StartupNotify=true
+Terminal=true
+Type=Application
+

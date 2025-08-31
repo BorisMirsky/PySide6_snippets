@@ -1,0 +1,11 @@
+type;icon
+Platform;./resources/images/markers/crossing.png
+RfidTag;./resources/images/markers/rfid_tag.png
+UNDEFINED;./resources/images/markers/picket.png
+ContactNetwork;./resources/images/markers/picket.png
+Tunnel;./resources/images/markers/picket.png
+ArrowPointer;./resources/images/markers/picket.png
+ArrowCross;./resources/images/markers/picket.png
+StationaryBrakeStop;./resources/images/markers/picket.png
+CrossPipe;./resources/images/markers/picket.png
+Miscellaneous;./resources/images/markers/picket.png

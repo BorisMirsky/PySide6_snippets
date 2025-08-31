@@ -1,0 +1,258 @@
+{
+    "machine_parameters": {
+        "description": "Динамик 09-3X №17",
+        "measures_step": 0.185,
+        "front_horde_plan": 11.165,
+        "back_horde_plan": 5.480,
+        "front_horde_prof": 11.100,
+        "back_horde_prof": 4.670,
+        "ticks_number": 197282,
+        "ticks_distance": 100,
+        "lining_system_movable": true,
+        "levelling_system_movable": true
+    },    
+    "rfid_scanner": {
+        "host": "tmr:///dev/ttyUSB5",
+        "antennas": [1, 2],
+        "protocol": "GEN2",
+        "region": "EU3",
+        "check_timeout_ms": 50,
+        "expire_timeout_ms": 1000,
+        "_scanners": [
+            {
+                "model": "ThingmagicM6ERfidScanner",
+                "host": "tmr:///dev/ttyUSB5",
+                "antennas": [1, 2],
+                "protocol": "GEN2",
+                "region": "EU3"
+            }
+        ],
+	    "scanners": [
+            {
+                "model": "UhfSlr1104RfidScanner",
+                "host": "127.0.0.1",
+                "port": 10001,
+                "_antennas": 10001
+            }
+        ]
+    },
+    "models": {
+        "connection": {
+            "port": "/dev/ttyUSB0",
+            "_port": "COM3",
+            "server_id": 1,
+            "baud_rate": 115200,
+            "poll_timer": 30,
+            "lining_timer": 30,
+            "receive_items_count": 18,
+            "send_items_count": 12
+        },
+        "sensors": {
+            "tick_counter": {
+                "register_id": 13,
+                "inverse": true
+            },            
+            "strelograph_work": {
+                "register_id": 1,
+                "inverse": true,
+                "right_press_delta": 9,
+                "projection_range": {
+                    "min": -8891,
+                    "max": 9373
+                },
+                "value_range": {
+                    "zero": 8,
+                    "min": -298,
+                    "max": 302
+                }
+            },            
+            "pendulum_work": {
+                "register_id": 3,
+                "projection_range": {
+                    "min": -3276, 
+                    "max": 2809
+                },
+                "value_range": {
+                    "min": 102, 
+                    "max": -102
+                }
+            },
+            "pendulum_control": {
+                "register_id": 4,
+                "projection_range": {
+                    "min": -3283,  
+                    "max": 3142
+                },
+                "value_range": {
+                    "min": 99, 
+                    "max": -101
+                }
+            },
+            "pendulum_front": {
+                "register_id": 9,
+                "projection_range": {
+                    "min": -3842, 
+                    "max": 3129
+                },
+                "value_range": {
+                    "min": 120, 
+                    "max": -100
+                }
+            },
+            "sagging_left": {
+                "register_id": 5,
+                "projection_range": {
+                    "min": -11850, 
+                    "max": 13650
+                },
+                "value_range": {
+                    "min": 101, 
+                    "max": -99
+                }
+            },
+            "sagging_right": {
+                "register_id": 6,
+                "projection_range": {
+                    "min": -10525, 
+                    "max": 12225
+                },
+                "value_range": {
+                    "zero": 6,
+                    "min": 96,
+                    "max": -104
+                }
+            },            
+            "satellite": {
+                "register_id": 7,
+                "projection_range": {
+                    "min": -7550, 
+                    "max": 12100
+                },
+                "value_range": {
+                    "min": 1.5,
+                    "max": 0
+                }
+            }, 
+            "discrete_signals": {
+                "register_id": 12
+            }
+        },
+        "controls": {
+            "lining": {
+                "register_id": 2,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": 827,
+                    "max": 213,
+                    "zero": 540,
+                    "start_value": 30
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+            "lifting_left": {
+                "register_id": 3,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": 902,
+                    "max": 288,
+                    "zero": 595,
+                    "start_value": 150
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+            "lifting_right": {
+                "register_id": 4,
+                "interpolation_type": "piecewise_linear",
+                "projection_range": {                    
+                    "min": 897,
+                    "max": 283,
+                    "zero": 590,
+                    "start_value": 150
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10,
+                    "zero_range": [-0.5,0.5]
+                }
+            },
+
+            "indicator_lining": {
+                "register_id": 5,
+                "projection_range": {
+                    "min": 42,
+                    "max": 982
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            },
+            "indicator_pendulum_work": {
+                "register_id": 6,
+                "projection_range": {
+                    "min": 982,
+                    "max": 42
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            },
+            "indicator_pendulum_control": {
+                "register_id": 7,
+                "projection_range": {
+                    "min": 982,
+                    "max": 42
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            },
+            "indicator_pendulum_front": {
+                "register_id": 8,
+                "projection_range": {
+                    "min": 3850,
+                    "max": 250
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            },
+            "indicator_lifting_left": {
+                "register_id": 9,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            },
+            "indicator_lifting_right": {
+                "register_id": 10,
+                "projection_range": {
+                    "min": 0,
+                    "max": 1023
+                },
+                "value_range": {
+                    "min": -10,
+                    "max": 10
+                }
+            }
+        }
+    },
+    "settings": {
+        "backups_path": "~/vniizht/tmp"
+    }
+}
