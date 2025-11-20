@@ -1,2 +1,2 @@
-# Strela
-all about Arrow project VNIIZT
+# PySide6_snippets
+many code snippets for working with PySide6
