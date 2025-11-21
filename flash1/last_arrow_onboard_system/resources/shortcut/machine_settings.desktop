@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Тарировать машину
-Comment=Утилита тарировки путевой машины
-Exec=/home/arrow/vniizht/arrow_onboard/machine_settings
-Path=/home/arrow/vniizht/arrow_onboard/
-Icon=/home/arrow/vniizht/arrow_onboard/resources/style/images/icon_arrow_main_256.png
-Terminal=false
-Type=Application
-

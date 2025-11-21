@@ -1,3 +1,0 @@
-type;location;title;icon;is_continuation
-Platform;Right;platform-right-start;./resources/images/markers/crossing.png;true
-Platform;Right;platform-right-end;./resources/images/markers/crossing.png;false

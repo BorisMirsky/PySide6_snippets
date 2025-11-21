@@ -1,6 +1,0 @@
-picket_start;picket_end;length;radius;level;geom;curve_type
-0.0;96.26;96.26;-13892.46;0.0;радиус;straight
-96.26;166.81;70.55;;0.0;линейный;transition
-166.81;266.18;99.37;-371.44;15.0;радиус;curve
-266.18;390.0;123.82;;0.0;линейный;transition
-390.0;420.0;30.0;415575.56;0.0;радиус;straight

@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Демо Стрела ДС
-Comment=Start Strela Application
-Exec=/home/arrow/vniizht/arrow_onboard/mock_run
-Path=/home/arrow/vniizht/arrow_onboard/
-Icon=/home/arrow/vniizht/arrow_onboard/resources/style/images/icon_arrow_main_256.png
-Terminal=false
-Type=Application
-
